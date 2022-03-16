@@ -10,7 +10,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -76,10 +75,7 @@
     scroll-behavior: smooth;
   }
 }
-input{
-    background:gray ;
-   border:2px;
-}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -100,11 +96,9 @@ hr {
   border: 0;
   opacity: 0.25;
 }
-frgg.jpg {
-    width: 1200px ;
-}
+
 hr:not([size]) {
-    height: 1px;
+  height: 1px;
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -113,10 +107,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 500;
   line-height: 1.2;
 }
-h9, .h9 {
-    font-size: calc(1.375rem + 1.5vw);
-    text-decoration: none;
-}
+
 h1, .h1 {
   font-size: calc(1.375rem + 1.5vw);
 }
@@ -138,7 +129,7 @@ h2, .h2 {
 h3, .h3 {
   font-size: calc(1.3rem + 0.6vw);
 }
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
   h3, .h3 {
     font-size: 1.75rem;
   }
@@ -147,7 +138,7 @@ h3, .h3 {
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
   h4, .h4 {
     font-size: 1.5rem;
   }
@@ -183,28 +174,22 @@ address {
 
 ol,
 ul {
-    padding-left: 2rem;
-    list-style-type: none;
-    text-decoration: none;
+  padding-left: 2rem;
 }
 
 ol,
 ul,
 dl {
-    margin-top: 0;
-    margin-bottom: 1rem;
-    list-style-type: none;
-   
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
-    ol ol,
-    ul ul,
-    ol ul,
-    ul ol {
-        margin-bottom: 0;
-        list-style-type: none;
-    }
-        
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
 
 dt {
   font-weight: 700;
@@ -251,7 +236,7 @@ sup {
 
 a {
   color: #0d6efd;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover {
   color: #0a58ca;
@@ -365,7 +350,6 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-border-bottom-style:initial;
 }
 
 button,
@@ -568,7 +552,7 @@ progress {
   font-weight: 300;
   line-height: 1.2;
 }
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
   .display-6 {
     font-size: 2.5rem;
   }
@@ -606,7 +590,7 @@ progress {
 
 .blockquote-footer {
   margin-top: -1rem;
- 
+  margin-bottom: 1rem;
   font-size: 0.875em;
   color: #6c757d;
 }
@@ -649,34 +633,34 @@ progress {
 .container-lg,
 .container-md,
 .container-sm {
-    width: 200%;
-    padding-right: var(--bs-gutter-x0,75rem);
-    padding-left: var(--bs-gutter-x,0,75rem);
-    margin-right: unset;
-    margin-left: unset;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
 }
 
-@media (mini-width: 720px) {
+@media (min-width: 576px) {
   .container-sm, .container {
-    max-width: 1080px;
+    max-width: 540px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 768px) {
   .container-md, .container-sm, .container {
-    max-width: 1080px;
+    max-width: 720px;
   }
 }
-@media (min-width:720px) {
+@media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
-    max-width: 1080px;
+    max-width: 960px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1140px;
   }
 }
-@media (min-width: 720px) {
+@media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1320px;
   }
@@ -7507,8 +7491,8 @@ textarea.form-control-lg {
 }
 
 .py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
 }
 
 .pt-0 {
@@ -9806,7 +9790,7 @@ textarea.form-control-lg {
 
   .py-lg-0 {
     padding-top: 0 !important;
-    padding-bottom: 0!important;
+    padding-bottom: 0 !important;
   }
 
   .py-lg-1 {
@@ -11301,9 +11285,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-  .a{
-      text-decoration:none;
-  }
-
-
- 
+}
